@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cloud-001",
+    "category": "cloud-concepts",
+    "question": "A team obtains virtual machines, storage, databases and networking over the internet instead of building and maintaining its own datacenter. What is this delivery model called?",
+    "answer": "Cloud computing.",
+    "explanation": "Cloud computing is the delivery of computing services over the internet, allowing a team to expand IT capacity without being constrained by its own physical infrastructure in the same way as a traditional datacenter.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute"
+  },
+  {
+    "id": "cloud-002",
+    "category": "cloud-concepts",
+    "question": "Under the shared responsibility model, which responsibilities always remain with the cloud customer?",
+    "answer": "The customer remains responsible for its information and data, devices allowed to connect, and accounts and identities.",
+    "explanation": "The provider is always responsible for the physical datacenter, physical network and physical hosts. Responsibility for items such as operating systems, applications and network controls varies by cloud service type.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model"
+  },
+  {
+    "id": "cloud-003",
+    "category": "cloud-concepts",
+    "question": "An organisation keeps sensitive workloads in its dedicated private environment but connects that environment to a public cloud so it can add public-cloud resources during temporary demand spikes. Which cloud model is this?",
+    "answer": "Hybrid cloud.",
+    "explanation": "A hybrid cloud interconnects public and private cloud environments. The organisation can decide where each workload runs and can use public-cloud capacity to handle temporary increases in demand.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/5-define-cloud-models"
+  },
+  {
+    "id": "cloud-004",
+    "category": "cloud-concepts",
+    "question": "A business avoids buying servers up front, pays only for the cloud resources it consumes, and releases those resources when demand falls. How is this spending classified?",
+    "answer": "Operational expenditure (OpEx) under the consumption-based model.",
+    "explanation": "Capital expenditure (CapEx) is up-front spending on physical infrastructure. Cloud services are paid for as they are consumed, so cloud computing is classified as an operational expense.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/6-describe-consumption-based-model"
+  },
+  {
+    "id": "cloud-005",
+    "category": "cloud-concepts",
+    "question": "During a sudden traffic peak, an application adds more virtual machine instances, then removes them when traffic drops. Which type of scaling is this?",
+    "answer": "Horizontal scaling.",
+    "explanation": "Horizontal scaling adds or removes the number of resources, such as virtual machines. Vertical scaling instead changes the capability of an existing resource, such as increasing its CPU or RAM.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud"
+  },
+  {
+    "id": "arch-001",
+    "category": "azure-architecture-services",
+    "question": "What is an Azure region?",
+    "answer": "A geographical area containing at least one, and potentially multiple, nearby datacenters networked together with a low-latency network.",
+    "explanation": "When you deploy many Azure resources, you choose the region where they will run. Some services and features are only available in certain regions, while a few services are global.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure"
+  },
+  {
+    "id": "arch-002",
+    "category": "azure-architecture-services",
+    "question": "Why would you spread a workload across Availability Zones within one Azure region?",
+    "answer": "To protect it if one datacenter location in that region fails.",
+    "explanation": "Availability Zones are physically separate datacenters within a region, each with independent power, cooling and networking. If one zone goes down, the others continue working.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure"
+  },
+  {
+    "id": "arch-003",
+    "category": "azure-architecture-services",
+    "question": "What is the purpose of an Azure region pair?",
+    "answer": "To reduce the chance that a single regional event disrupts services, by pairing a region with another region in the same geography at least 300 miles away.",
+    "explanation": "Region pairs support replication and recovery across a geography. However, not every Azure service replicates or fails over automatically, so recovery may still need to be configured by the customer.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure"
+  },
+  {
+    "id": "arch-004",
+    "category": "azure-architecture-services",
+    "question": "What happens to the resources inside an Azure resource group when that resource group is deleted?",
+    "answer": "All resources in the resource group are deleted with it.",
+    "explanation": "Every resource belongs to exactly one resource group at a time, and actions applied to the group affect everything inside it. Grouping a temporary environment together makes clean removal easier, but deletion must be used carefully.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure"
+  },
+  {
+    "id": "arch-005",
+    "category": "azure-architecture-services",
+    "question": "Why would an organisation use Azure management groups instead of managing every subscription separately?",
+    "answer": "To apply governance and access conditions across multiple subscriptions from one higher level.",
+    "explanation": "Management groups sit above subscriptions. Policies and access conditions applied to a management group are automatically inherited by the subscriptions underneath it.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure"
+  },
+  {
+    "id": "compute-001",
+    "category": "compute",
+    "question": "A team needs total control over an operating system so it can install custom software and manage patches itself. Which Azure compute option fits best?",
+    "answer": "Azure Virtual Machines.",
+    "explanation": "Azure Virtual Machines are an infrastructure as a service (IaaS) option. Azure provides the virtualised hardware, while you control the operating system, configuration, patching and installed software.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines"
+  },
+  {
+    "id": "compute-002",
+    "category": "compute",
+    "question": "Which Azure feature lets you create and manage a group of identical, load-balanced virtual machines that can automatically increase or decrease in number with demand?",
+    "answer": "Virtual Machine Scale Sets.",
+    "explanation": "Scale sets centralise the configuration of identical VMs and can automatically scale out or in based on demand or a schedule, while load balancing distributes traffic across the instances.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/2-virtual-machines"
+  },
+  {
+    "id": "compute-003",
+    "category": "compute",
+    "question": "Which Azure service is described as the fastest and simplest way to run a single container in Azure without managing virtual machines?",
+    "answer": "Azure Container Instances.",
+    "explanation": "Azure Container Instances is a platform as a service (PaaS) offering: you provide the container and the service runs it for you, without you managing the underlying virtual machines.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers"
+  },
+  {
+    "id": "compute-004",
+    "category": "compute",
+    "question": "Which Azure compute option runs code only when an event triggers it, scales automatically, and releases resources when the work finishes?",
+    "answer": "Azure Functions.",
+    "explanation": "Azure Functions is an event-driven, serverless compute option. Instead of keeping servers running continuously, an event wakes the function, and you are charged for the CPU time used while it runs.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/6-functions"
+  },
+  {
+    "id": "compute-005",
+    "category": "compute",
+    "question": "A developer wants to host a web application on a managed platform rather than maintaining the virtual machines underneath it. Which hosting option should she consider first?",
+    "answer": "Azure App Service web apps.",
+    "explanation": "Application hosting options in Azure include web apps, containers and virtual machines. Web apps provide a managed hosting platform, while virtual machines give the most control but also the most management responsibility.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/7-describe-application-hosting-options"
+  },
+  {
+    "id": "network-001",
+    "category": "networking",
+    "question": "Which Azure service provides the fundamental building block for a private network in Azure, which can be divided into subnets?",
+    "answer": "Azure Virtual Network.",
+    "explanation": "Azure Virtual Network enables Azure resources to communicate with each other, with on-premises networks and, when configured, with the internet. Subnets divide the network into smaller segments.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network"
+  },
+  {
+    "id": "network-002",
+    "category": "networking",
+    "question": "Which Azure service sends encrypted traffic between an Azure virtual network and an on-premises location over the public internet?",
+    "answer": "Azure VPN Gateway.",
+    "explanation": "VPN Gateway creates a protected connection between Azure and on-premises networks using the public internet. It is different from ExpressRoute, which uses a private connection.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks"
+  },
+  {
+    "id": "network-003",
+    "category": "networking",
+    "question": "An organisation wants to connect its on-premises network to Azure over a private connection that does not travel across the public internet. Which service is designed for this?",
+    "answer": "Azure ExpressRoute.",
+    "explanation": "ExpressRoute extends on-premises networks into Azure over a private connection provided by a connectivity partner. That private path is the key difference from a VPN connection over the public internet.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute"
+  },
+  {
+    "id": "network-004",
+    "category": "networking",
+    "question": "Which Azure service provides a hosting service for DNS domains and name resolution using Azure infrastructure?",
+    "answer": "Azure DNS.",
+    "explanation": "Azure DNS lets you host DNS domains in Azure and resolve names using Azure infrastructure, so domain records can be managed alongside your other Azure resources.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/5-domain-name-system"
+  },
+  {
+    "id": "network-005",
+    "category": "networking",
+    "question": "Which basic Azure network access control contains security rules that allow or deny inbound and outbound traffic for Azure resources?",
+    "answer": "A network security group (NSG).",
+    "explanation": "Network security groups filter network traffic to and from Azure resources. They provide a basic way to control which traffic is allowed to reach resources in a virtual network.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/2-virtual-network"
+  },
+  {
+    "id": "storage-001",
+    "category": "storage",
+    "question": "Which Azure storage service is a massively scalable object store designed for unstructured text and binary data such as images, documents and media?",
+    "answer": "Azure Blob Storage.",
+    "explanation": "Blob Storage stores objects rather than files in a traditional folder system. It is commonly used for serving images or documents, streaming media, backup data and analytics data.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services"
+  },
+  {
+    "id": "storage-002",
+    "category": "storage",
+    "question": "Which Azure storage service offers fully managed cloud file shares that can be accessed through the SMB or NFS protocols?",
+    "answer": "Azure Files.",
+    "explanation": "Azure file shares can be mounted by cloud and on-premises deployments. SMB shares are commonly used by Windows, Linux and macOS clients, while NFS shares are accessed from Linux or macOS clients.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services"
+  },
+  {
+    "id": "storage-003",
+    "category": "storage",
+    "question": "Customer invoices are accessed infrequently and will be stored for at least 30 days. Which Azure Blob Storage access tier is designed for this pattern?",
+    "answer": "The Cool access tier.",
+    "explanation": "Cool is optimised for infrequently accessed data stored for at least 30 days. It has lower storage costs than Hot but higher access costs, so it suits data that is still needed occasionally.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/4-describe-azure-storage-services"
+  },
+  {
+    "id": "storage-004",
+    "category": "storage",
+    "question": "Which redundancy option copies data three times in the primary region and then asynchronously copies it to a secondary region, where it is also stored with locally redundant storage?",
+    "answer": "Geo-redundant storage (GRS).",
+    "explanation": "GRS protects against regional outages by combining locally redundant storage in the primary region with asynchronous replication to the paired secondary region. By default, the secondary copy is not readable until failover occurs.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy"
+  },
+  {
+    "id": "storage-005",
+    "category": "storage",
+    "question": "Which Azure option physically ships a secure storage device to your datacenter so very large datasets can be transferred to Azure when network bandwidth is limited?",
+    "answer": "Azure Data Box.",
+    "explanation": "Azure Data Box is an offline migration option for large amounts of data, commonly tens of terabytes or more. Data is copied to the device, the device is returned, and the data is uploaded to Azure after Microsoft receives it.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options"
+  },
+  {
+    "id": "security-001",
+    "category": "security-governance-cost-management",
+    "question": "Which Microsoft cloud service provides identity and access management, including authentication, single sign-on, application management and device management?",
+    "answer": "Microsoft Entra ID.",
+    "explanation": "Microsoft Entra ID verifies identity before granting access and supports features such as self-service password reset, multifactor authentication, banned password lists and smart lockout.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/2-directory-services"
+  },
+  {
+    "id": "security-002",
+    "category": "security-governance-cost-management",
+    "question": "Which Microsoft Entra tool can allow access from a known location but require multifactor authentication or block access when the sign-in location, user or device looks unusual?",
+    "answer": "Microsoft Entra Conditional Access.",
+    "explanation": "Conditional Access collects signals such as who the user is, where they are and which device they are using, then enforces a decision to allow access, block access or require another authentication factor.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access"
+  },
+  {
+    "id": "security-003",
+    "category": "security-governance-cost-management",
+    "question": "An engineer only needs to read one storage account. Which Azure approach assigns only the permissions needed for that task, at that scope?",
+    "answer": "Azure role-based access control (Azure RBAC).",
+    "explanation": "Azure RBAC assigns roles containing permissions to users or groups at a management group, subscription, resource group or single-resource scope. Following least privilege means granting read access only, rather than broader write or owner access.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control"
+  },
+  {
+    "id": "security-004",
+    "category": "security-governance-cost-management",
+    "question": "Which Azure service lets you create and assign rules, such as allowing only certain virtual machine sizes or locations, and audit resources that do not comply?",
+    "answer": "Azure Policy.",
+    "explanation": "Azure Policy controls and audits resource configurations so they remain compliant with organisational standards. It is different from RBAC: RBAC controls who can perform actions, while Azure Policy controls the rules resources must follow.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy"
+  },
+  {
+    "id": "security-005",
+    "category": "security-governance-cost-management",
+    "question": "Before deploying resources, which Azure tool helps you estimate what the planned services are likely to cost?",
+    "answer": "The Azure Pricing Calculator.",
+    "explanation": "The Pricing Calculator is used to estimate costs for planned Azure services before deployment. Microsoft Cost Management is then used to track and manage actual spending after resources are running.",
+    "sourceUrl": "https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators"
+  }
+]
