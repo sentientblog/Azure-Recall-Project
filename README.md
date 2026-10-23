@@ -2,7 +2,7 @@
 
 > **Unofficial study tool** Azure Recall is an independent educational prototype. It is not affiliated with or endorsed by Microsoft.
 
-Azure Recall helps beginners preparing for the Microsoft Azure Fundamentals (AZ-900) exam turn passive reading into active recall. Learners study original flashcards ny topic, reveal an answer with a plain-language explanation and a Microsoft Learn source, mark what they still miss, and return to those cards in a dedicated review mode.
+Azure Recall helps beginners preparing for the Microsoft Azure Fundamentals (AZ-900) exam turn passive reading into active recall. Learners study original flashcards by topic, reveal an answer with a plain-language explanation and a Microsoft Learn source, mark what they still miss, and return to those cards in a dedicated review mode.
 
 Built for the Power Learn project Vibe Coding Hackathon: AZ-900 Exam Prep Edition.
 
@@ -41,7 +41,7 @@ Built for the Power Learn project Vibe Coding Hackathon: AZ-900 Exam Prep Editio
 3. Start the development server: `npm run dev`
 4. Open the local address shown in the terminal.
 
-For the production version, use the public deployed link in this README once it has been added.
+**Live app:** https://azure-recall-project.vercel.app/
 
 ## Content and limitations
 
